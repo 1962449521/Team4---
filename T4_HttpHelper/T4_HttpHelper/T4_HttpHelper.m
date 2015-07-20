@@ -6,16 +6,17 @@
 //  Copyright (c) 2015年 none. All rights reserved.
 //
 
-
-
 #import "T4_HttpHelper.h"
 #import "AFNetworking.h"
 
-const int T4_HTTP_NET_COULDNTACCESS_ERRORCODE = 103;
-NSString *const T4_HTTP_NET_COULDNTACCESS_MESSAGE = @"网络错误";
+const int T4_HTTP_NET_COULDNTACCESS_ERRORCODE             = 103;
+NSString *const T4_HTTP_NET_COULDNTACCESS_MESSAGE         = @"网络错误";
+NSString *const T4_HTTP_ACCESS_STATUS_CHANGE_NOTIFICATION = @"t4_http_access_status_change_notification";
 
 static bool isFirstNetAccess    = NO;
 static bool couldMonitorNetwork = NO;
+
+
 
 @implementation T4HttpHelper
 
@@ -31,7 +32,11 @@ static bool couldMonitorNetwork = NO;
     if (isFirstNetAccess == NO) {
         [[AFNetworkReachabilityManager sharedManager] startMonitoring];
         [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+            if(couldMonitorNetwork){
+                [[NSNotificationCenter defaultCenter] postNotificationName:T4_HTTP_ACCESS_STATUS_CHANGE_NOTIFICATION object:self userInfo:@{@"isConnectionOK":@([self isConnectionOK]), @"isWiFiOK":@([self isWiFiOK])}];
+            }
             couldMonitorNetwork = YES;
+
         }];
         isFirstNetAccess = YES;
     }

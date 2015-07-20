@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A6353073-BAA1-481F-B8AE-5AD4F8EEFC7D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>T4_SuperClass</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4BA8E20E2B6FCF646A528DF17CC59AEE86C95620</key>
+		<string>https://github.com/1962449521/Team4PublicClass.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>T4_SuperClass/T4_SuperClass.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4BA8E20E2B6FCF646A528DF17CC59AEE86C95620</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/1962449521/Team4PublicClass.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4BA8E20E2B6FCF646A528DF17CC59AEE86C95620</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4BA8E20E2B6FCF646A528DF17CC59AEE86C95620</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Team4PublicClass</string>
+		</dict>
+	</array>
+</dict>
+</plist>
